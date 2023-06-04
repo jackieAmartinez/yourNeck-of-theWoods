@@ -1,20 +1,24 @@
 body {
     /* initial body styling */
-    background-image: url(../images/weather-forecast-background.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: rgb(58, 79, 98);
+    min-height: 100%;
     margin: 2.5rem 5rem;
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(100, 124, 146);
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 .card {
     /* styling for reading panes */
-    background-color: rgb(0, 0, 0, 0.25);
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px black, -1px -1px 0.25px rgb(255, 255, 255, 0.5);
-    backdrop-filter: blur(7px);
-    color: whitesmoke;
-    text-shadow: 0px 0px 5px black, 2px 2px 5px black, 2px 2px 5px black;
+    background-color: hsl(167, 79%, 91%);
+    color: rgb(5, 5, 5);
+    margin: 5px;
+    border-radius: 6px;
 }
 
 #title {
@@ -61,6 +65,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    align-items: center;
 }
 
 #searchInput {
@@ -68,10 +73,8 @@ main {
     padding: 0.25rem;
     border-radius: 7px;
     border-style: none;
-    box-shadow: 0px 0px 5px black, 0px 0px 1px rgb(255, 255, 255, 0.5);
-    background-color: rgb(0, 0, 0, 0);
-    color: whitesmoke;
-    text-shadow: 0px 0px 5px black, 2px 2px 5px black, 2px 2px 5px black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -80,10 +83,9 @@ main {
     padding: 0.25rem;
     border-radius: 7px;
     border-style: none;
-    box-shadow: 0px 0px 5px black, 0px 0px 1px rgb(255, 255, 255, 0.5);
-    background-color: rgb(0, 0, 0, 0);
-    color: whitesmoke;
-    text-shadow: 0px 0px 5px black, 2px 2px 5px black, 2px 2px 5px black;
+    background-color: rgb(58, 79, 98);
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 #recentSearch {
@@ -108,14 +110,11 @@ main {
 }
 
 button {
-    padding: 0.25rem;
-    border-radius: 7px;
-    border-style: none;
-    box-shadow: 0px 0px 5px black, 0px 0px 1px rgb(255, 255, 255, 0.5);
-    background-color: rgb(0, 0, 0, 0);
-    color: whitesmoke;
-    text-shadow: 0px 0px 5px black, 2px 2px 5px black, 2px 2px 5px black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
     text-align: center;
+    width: 80%;
+    margin: 0.7rem;
 }
 
 #weatherConditions {
@@ -214,18 +213,17 @@ button {
     gap: 0.5rem;
 }
 
-footer {
-    /* styling for footer */
-    display: contents;
+@media screen and (max-width: 1366px) {
+    .fiveDay-text {
+        width: 100%;  
+    }
 }
 
-#cuteExit {
-    /* styling for cuteExit */
-    display: flex;
-    flex-direction: column;
-    align-items:flex-end;
-    padding: 1rem;
-}
+/* footer {
+    background-color: hsl(167, 79%, 91%);
+    height: 250px;
+    margin: 0px;
+} */
 
 .hide {
     /* styling to hide area */
